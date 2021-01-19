@@ -1,0 +1,188 @@
+    # Project definitions (do not edit)
+Task: BeamWalking
+scorer: DeepLabGod
+date: jan18
+multianimalproject: false
+
+    # Project path (change when moving around)
+project_path: /content/drive/MyDrive/DeepLearning Rato/Projetos/BeamWalking-DeepLabGod-2021-01-18
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  D:\tulio\Google Drive\DeepLearning Rato\Projetos\BeamWalking-DeepLabGod-2021-01-18\videos\Video5.MOV:
+    crop: 0, 1920, 0, 1080
+bodyparts:
+- nose
+- eye
+- cervical
+- high thoracic
+- lower thoracic
+- lumbar
+- tail base
+- tail proximal
+- tail middle
+- tail distal
+- front paw
+- post paw
+- Entrada
+start: 0
+stop: 1
+numframes2pick: 200
+
+    # Plotting configuration
+skeleton:
+- - nose
+  - eye
+- - nose
+  - cervical
+- - nose
+  - high thoracic
+- - nose
+  - lower thoracic
+- - nose
+  - lumbar
+- - nose
+  - tail base
+- - nose
+  - tail proximal
+- - nose
+  - tail middle
+- - nose
+  - tail distal
+- - nose
+  - front paw
+- - nose
+  - post paw
+- - eye
+  - cervical
+- - eye
+  - high thoracic
+- - eye
+  - lower thoracic
+- - eye
+  - lumbar
+- - eye
+  - tail base
+- - eye
+  - tail proximal
+- - eye
+  - tail middle
+- - eye
+  - tail distal
+- - eye
+  - front paw
+- - eye
+  - post paw
+- - cervical
+  - high thoracic
+- - cervical
+  - lower thoracic
+- - cervical
+  - lumbar
+- - cervical
+  - tail base
+- - cervical
+  - tail proximal
+- - cervical
+  - tail middle
+- - cervical
+  - tail distal
+- - cervical
+  - front paw
+- - cervical
+  - post paw
+- - high thoracic
+  - lower thoracic
+- - high thoracic
+  - lumbar
+- - high thoracic
+  - tail base
+- - high thoracic
+  - tail proximal
+- - high thoracic
+  - tail middle
+- - high thoracic
+  - tail distal
+- - high thoracic
+  - front paw
+- - high thoracic
+  - post paw
+- - lower thoracic
+  - lumbar
+- - lower thoracic
+  - tail base
+- - lower thoracic
+  - tail proximal
+- - lower thoracic
+  - tail middle
+- - lower thoracic
+  - tail distal
+- - lower thoracic
+  - front paw
+- - lower thoracic
+  - post paw
+- - lumbar
+  - tail base
+- - lumbar
+  - tail proximal
+- - lumbar
+  - tail middle
+- - lumbar
+  - tail distal
+- - lumbar
+  - front paw
+- - lumbar
+  - post paw
+- - tail base
+  - tail proximal
+- - tail base
+  - tail middle
+- - tail base
+  - tail distal
+- - tail base
+  - front paw
+- - tail base
+  - post paw
+- - tail proximal
+  - tail middle
+- - tail proximal
+  - tail distal
+- - tail proximal
+  - front paw
+- - tail proximal
+  - post paw
+- - tail middle
+  - tail distal
+- - tail middle
+  - front paw
+- - tail middle
+  - post paw
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: plasma
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+croppedtraining: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
